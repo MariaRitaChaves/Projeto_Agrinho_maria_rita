@@ -8,16 +8,16 @@
 }
 
 body {
-  background-color: #f4f1ed; /* bege bem clarinho */
-  color: #3e4a31; /* verde escuro amarelado */
+  background-color: #c7d0a7; /* verde amarelado claro (antes era do .practices) */
+  color: #5a4329; /* marrom médio (antes header) */
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
 }
 
 header {
-  background-color: #5a4329; /* marrom médio */
+  background-color: #88956f; /* verde oliva suave (antes link hover) */
   padding: 20px 40px;
-  color: #c9d6b7; /* verde claro acinzentado */
+  color: #f4f1ed; /* bege claro (antes texto header) */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -33,7 +33,7 @@ nav ul {
 }
 
 nav a {
-  color: #c9d6b7; /* verde claro */
+  color: #f4f1ed; /* bege claro */
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -41,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #88956f; /* verde oliva suave */
+  color: #a17c56; /* marrom claro (antes card background) */
 }
 
 main {
@@ -56,15 +56,38 @@ section.intro {
   border-radius: 8px;
   margin-bottom: 30px;
   box-shadow: 1px 1px 6px rgba(0,0,0,0.05);
-  color: #3e4a31;
+  color: #5a4329; /* marrom médio */
 }
 
 section.intro h2 {
   font-family: 'Georgia', serif;
   margin-bottom: 15px;
-  color: #3e4a31;
+  color: #5a4329;
 }
 
+/* Destaque com retângulo colorido no título (exemplo para .highlight-title) */
+.highlight-title {
+  position: relative;
+  display: inline-block;
+  padding-left: 15px;
+  font-family: 'Georgia', serif;
+  font-size: 1.8rem;
+  color: #5a4329;
+  margin-bottom: 20px;
+}
+
+.highlight-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 8px;
+  height: 100%;
+  background-color: #a17c56; /* marrom claro para o retângulo */
+  border-radius: 3px;
+}
+
+/* Estatísticas */
 section.stats {
   display: flex;
   gap: 20px;
@@ -72,7 +95,7 @@ section.stats {
 }
 
 section.stats .card {
-  background-color: #a17c56; /* marrom claro */
+  background-color: #5a4329; /* marrom médio */
   padding: 20px;
   flex: 1;
   border-radius: 8px;
@@ -90,13 +113,14 @@ section.stats .card p {
   font-size: 1rem;
 }
 
+/* Práticas (antes body background) */
 section.practices {
-  background-color: #c7d0a7; /* verde amarelado claro */
+  background-color: #f4f1ed; /* bege claro */
   padding: 25px 30px;
   border-radius: 8px;
   box-shadow: 1px 1px 8px rgba(0,0,0,0.1);
   margin-bottom: 40px;
-  color: #3e4a31;
+  color: #5a4329; /* marrom médio */
 }
 
 section.practices h3 {
@@ -104,6 +128,7 @@ section.practices h3 {
   margin-bottom: 20px;
 }
 
+/* Lista */
 section.practices ul {
   list-style: none;
   padding-left: 0;
@@ -129,7 +154,7 @@ section.practices ul li::before {
 }
 
 section.practices p a {
-  color: #5a4329; /* marrom escuro */
+  color: #a17c56; /* marrom claro */
   font-weight: 600;
   text-decoration: underline;
   transition: color 0.3s ease;
@@ -140,8 +165,8 @@ section.practices p a:hover {
 }
 
 footer {
-  background-color: #5a4329; /* marrom médio */
-  color: #c9d6b7; /* verde claro */
+  background-color: #88956f; /* verde oliva suave */
+  color: #f4f1ed; /* bege claro */
   text-align: center;
   padding: 15px 20px;
   font-size: 0.9rem;
