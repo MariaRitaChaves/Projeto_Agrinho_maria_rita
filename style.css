@@ -8,16 +8,16 @@
 }
 
 body {
-  background-color: #e6f2e6; /* verde claro */
-  color: #2e4d25; /* verde escuro */
+  background-color: #f5f2eb; /* bege claro */
+  color: #264653; /* azul petróleo */
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
 }
 
 header {
-  background-color: #3a6b35; /* verde médio */
+  background-color: #2a4d69; /* azul petróleo escuro */
   padding: 20px 40px;
-  color: #fff;
+  color: #f4a261; /* laranja queimado */
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
@@ -33,7 +33,7 @@ nav ul {
 }
 
 nav a {
-  color: #d9f0d9;
+  color: #f4a261; /* laranja queimado */
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -41,7 +41,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #b2d8b2;
+  color: #e76f51; /* laranja mais vivo */
 }
 
 main {
@@ -51,17 +51,18 @@ main {
 }
 
 section.intro {
-  background-color: #c9e2c9; /* verde suave */
+  background-color: #e9f1f7; /* cinza muito claro azulado */
   padding: 20px 30px;
   border-radius: 8px;
   margin-bottom: 30px;
   box-shadow: 1px 1px 6px rgba(0,0,0,0.05);
+  color: #264653;
 }
 
 section.intro h2 {
   font-family: 'Georgia', serif;
   margin-bottom: 15px;
-  color: #2b4b20;
+  color: #264653;
 }
 
 section.stats {
@@ -71,90 +72,22 @@ section.stats {
 }
 
 section.stats .card {
-  background-color: #d4e8d4;
+  background-color: #f4a261; /* laranja queimado */
   padding: 20px;
   flex: 1;
   border-radius: 8px;
   box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
   text-align: center;
+  color: white;
 }
 
 section.stats .card h4 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #3a6b35;
 }
 
 section.stats .card p {
   font-size: 1rem;
 }
 
-section.practices {
-  background-color: #b8d6b8;
-  padding: 25px 30px;
-  border-radius: 8px;
-  box-shadow: 1px 1px 8px rgba(0,0,0,0.1);
-  margin-bottom: 40px;
-}
-
-section.practices h3 {
-  font-family: 'Georgia', serif;
-  margin-bottom: 20px;
-  color: #2b4b20;
-}
-
-section.practices ul {
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 15px;
-}
-
-section.practices ul li {
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-  line-height: 1.4;
-  padding-left: 30px;
-  position: relative;
-}
-
-section.practices ul li::before {
-  content: '';
-  position: absolute;
-  left: 5px;
-  top: 7px;
-  width: 18px;
-  height: 18px;
-  font-size: 18px;
-}
-
-section.practices p a {
-  color: #2e4d25;
-  font-weight: 600;
-  text-decoration: underline;
-  transition: color 0.3s ease;
-}
-
-section.practices p a:hover {
-  color: #3a6b35;
-}
-
-footer {
-  background-color: #3a6b35;
-  color: #fff;
-  text-align: center;
-  padding: 15px 20px;
-  font-size: 0.9rem;
-  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-}
-
-/* Responsividade básica */
-@media (max-width: 700px) {
-  section.stats {
-    flex-direction: column;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
+section.pract
