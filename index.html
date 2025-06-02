@@ -1,48 +1,69 @@
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sustentabilidade no Campo</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senha</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <h1>Sustentabilidade no Campo</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="agricultura.html">Agricultura Sustentável</a></li>
-        <li><a href="tecnologia.html">Tecnologia no Campo</a></li>
-        <li><a href="educacao.html">Educação e Impacto</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="intro">
-      <h2>Promovendo o Futuro Sustentável</h2>
-      <p>A sustentabilidade no campo é um fator-chave para garantir o futuro das nossas gerações. Aprenda como práticas sustentáveis podem transformar a agricultura e a alimentação.</p>
+    <section class="conteudo">
+        <div class="conteudo-titulo">
+            <img src="unlock.svg" alt="cadeado fechado">
+            <h2 class="titulo-principal">Gerador de senhas</h2>
+            <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
+        </div>
+        <div class="conteudo-senha">
+            <label for="senha">Senha</label>
+            <input name="senha" type="text" id="campo-senha" readonly>
+        </div>
+        <div class="parametro">
+            <h3 class="parametro-titulo">Personalize sua senha</h3>
+            <div class="parametro-coluna__senha">
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Número de caracteres</h4>
+                    <div class="parametro-senha-botoes">
+                        <button class="parametro-senha__botao">-</button>
+                        <p class="parametro-senha__texto">12</p>
+                        <button class="parametro-senha__botao">+</button>
+                    </div>
+                </div>
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Características da senha</h4>
+                    <div class="parametro-senha-checkbox">
+                        <input name="maiusculo" type="checkbox" class="checkbox" checked>
+                        <label for="maiusculo">Letras maiúsculas</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="minusculo" type="checkbox" class="checkbox">
+                        <label for="minusculo">Letras minúsculas</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="numero" type="checkbox" class="checkbox">
+                        <label for="numero">Números</label>
+                    </div>
+                    <div class="parametro-senha-checkbox">
+                        <input name="simbolo" type="checkbox" class="checkbox">
+                        <label for="simbolo">Símbolos</label>
+                    </div>
+                </div>
+                <div class="parametro-senha">
+                    <h4 class="parametro-senha__titulo">Força da senha</h4>
+                    <div class="barra"></div>
+                    <div class="forca fraca"></div>
+                    <div class="parametro-senha-textos">
+                        <p>Fraca</p>
+                        <p>Média</p>
+                        <p>Forte</p>
+                    </div>
+                    <p class="entropia"></p>
+                </div>
+            </div>
+        </div>
     </section>
+    <script src="main.js"></script>
+</body>
 
-    <section class="stats">
-      <h3>Fatos Interessantes</h3>
-      <div class="card">
-        <h4>15%</h4>
-        <p>do alimento consumido mundialmente é proveniente de práticas sustentáveis.</p>
-      </div>
-      <div class="card">
-        <h4>50%</h4>
-        <p>menos desperdício de água nas culturas sustentáveis.</p>
-      </div>
-    </section>
-
- <section class="practices">
-  <h3>Principais Práticas Sustentáveis no Campo</h3>
-  <ul>
-    <li>🌱 Plantio direto para evitar erosão</li>
-    <li>💧 Uso racional da água na irrigação</li>
-    <li>♻️ Compostagem para adubação natural</li>
-    <li>☀️ Energia renovável no campo</li>
-  </ul>
-  <p>Saiba mais sobre essas práticas em <a href="https://www.gov.br/agricultura/pt-br/assuntos/noticias/conheca-as-boas-praticas-agricolas-que-geram-sustentabilidade-e-oportunidades-na-agricultura" target="_blank" rel="noopener noreferrer">Boas Práticas Agrícolas</a>.</p>
-</section>
+</html>
