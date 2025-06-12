@@ -1,4 +1,95 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sustentabilidade no Campo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Sustentabilidade no Campo</h1>
+    <nav>
+      <button onclick="showSection('home')">Início</button>
+      <button onclick="showSection('agricultura')">Agricultura</button>
+      <button onclick="showSection('meioAmbiente')">Meio Ambiente</button>
+      <button onclick="showSection('tecnologia')">Tecnologia</button>
+      <button onclick="showSection('quiz')">Quiz</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="content-section">
+      <h2>Bem-vindo ao Projeto Agrinho</h2>
+      <p>
+        Este projeto tem como objetivo mostrar como o campo pode ser sustentável através de boas práticas,
+        tecnologia e consciência ambiental. Aqui você vai conhecer como a agricultura, o meio ambiente e 
+        a inovação tecnológica se unem para proteger o futuro do planeta.
+      </p>
+      <p>
+        Clique nos botões acima para explorar cada área do nosso projeto. 🌱
+      </p>
+    </section>
+
+    <section id="agricultura" class="content-section">
+      <h2>Agricultura Sustentável</h2>
+      <p>
+        A agricultura sustentável é o uso de técnicas agrícolas que respeitam o meio ambiente, 
+        conservam os recursos naturais e garantem a produtividade a longo prazo. 
+        Entre as práticas mais utilizadas estão a rotação de culturas, o uso de adubos orgânicos 
+        e o manejo correto da água e do solo. Essas ações contribuem para uma produção agrícola 
+        mais equilibrada e menos agressiva à natureza.
+      </p>
+    </section>
+
+    <section id="meioAmbiente" class="content-section">
+      <h2>Meio Ambiente</h2>
+      <p>
+        Proteger o meio ambiente no campo é essencial para a sustentabilidade. 
+        Isso envolve a preservação de nascentes, matas ciliares, florestas e animais silvestres. 
+        Também é importante evitar o uso excessivo de agrotóxicos e fertilizantes químicos que 
+        contaminam o solo e a água. A educação ambiental nas comunidades rurais fortalece o 
+        compromisso com a conservação.
+      </p>
+    </section>
+
+    <section id="tecnologia" class="content-section">
+      <h2>Tecnologia no Campo</h2>
+      <p>
+        A tecnologia tem sido uma grande aliada do produtor rural sustentável. 
+        Com ela, é possível melhorar o uso dos recursos naturais, como com sistemas de irrigação 
+        controlada, energia solar e drones para monitoramento de lavouras. 
+        Essas inovações aumentam a produtividade sem agredir o meio ambiente, tornando o campo 
+        mais inteligente e eficiente.
+      </p>
+    </section>
+
+    <section id="quiz" class="content-section">
+      <h2>Quiz: Você sabe sobre Sustentabilidade no Campo?</h2>
+
+      <div class="question-block">
+        <p><strong>1. O que é agricultura sustentável?</strong></p>
+        <button onclick="checkAnswer(this, true)">Uso de técnicas que preservam o meio ambiente</button>
+        <button onclick="checkAnswer(this, false)">Uso de agrotóxicos para aumentar a produção</button>
+        <button onclick="checkAnswer(this, false)">Desmatamento para plantar mais</button>
+      </div>
+
+      <div class="question-block">
+        <p><strong>2. Qual destas ações é sustentável?</strong></p>
+        <button onclick="checkAnswer(this, false)">Queimar restos de plantação</button>
+        <button onclick="checkAnswer(this, true)">Usar energia solar nas fazendas</button>
+        <button onclick="checkAnswer(this, false)">Desperdiçar água na irrigação</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Projeto Agrinho – Maria Rita</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html><<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
