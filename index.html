@@ -1,165 +1,50 @@
 <!DOCTYPE html>
-
-📄 index.html (ou parte JSX se estiver em React)
-
-<section class="sustentabilidade">
-  <div class="container">
-    <h2>Educação e Agricultura Sustentável</h2>
-    <p>A educação no campo é fundamental para promover práticas agrícolas sustentáveis, preservando o meio ambiente e garantindo o futuro das próximas gerações.</p>
-
-    <div class="cards">
-      <div class="card">
-        <h3>Educação no Campo</h3>
-        <p>Capacitar jovens e agricultores com conhecimento técnico e ambiental é essencial para o desenvolvimento rural.</p>
-      </div>
-
-      <div class="card">
-        <h3>Tecnologia Sustentável</h3>
-        <p>O uso de ferramentas tecnológicas melhora a produção e reduz o impacto ambiental nas plantações e criações.</p>
-      </div>
-
-      <div class="card">
-        <h3>Práticas Sustentáveis</h3>
-        <p>Iniciativas como compostagem, rotação de culturas e uso racional da água fortalecem a sustentabilidade.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
----
-
-🎨 style.css (ou dentro de um <style> no HTML)
-
-.sustentabilidade {
-  padding: 60px 20px;
-  background-color: #f0f9f4;
-  color: #2e4d38;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-}
-
-.sustentabilidade h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-.sustentabilidade p {
-  font-size: 1.1rem;
-  max-width: 800px;
-  margin: 0 auto 40px;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-}
-
-.card {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  padding: 25px;
-  width: 300px;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
-.card h3 {
-  color: #287a44;
-  margin-bottom: 10px;
-  font-size: 1.4rem;
-}
-
-.card p {
-  font-size: 1rem;
-  color: #444;
-}
-
-
----
-
-✅ O que você pode fazer agora:
-
-Colar isso no seu projeto (na parte do conteúdo principal).
-
-Substituir os textos pelos que você quiser.
-
-Se quiser usar em React, mude as class para className.
-
-
-Se você quiser, posso gerar isso como um componente React ou adaptar com estilos mais modernos (como Tailwind). Só me avisar!
-
-="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerador de senha</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sustentabilidade no Campo</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <section class="conteudo">
-        <div class="conteudo-titulo">
-            <img src="unlock.svg" alt="cadeado fechado">
-            <h2 class="titulo-principal">Gerador de senhas</h2>
-            <h3 class="titulo-secundario">Gere instantaneamente uma senha aleatória e segura</h3>
-        </div>
-        <div class="conteudo-senha">
-            <label for="senha">Senha</label>
-            <input name="senha" type="text" id="campo-senha" readonly>
-        </div>
-        <div class="parametro">
-            <h3 class="parametro-titulo">Personalize sua senha</h3>
-            <div class="parametro-coluna__senha">
-                <div class="parametro-senha">
-                    <h4 class="parametro-senha__titulo">Número de caracteres</h4>
-                    <div class="parametro-senha-botoes">
-                        <button class="parametro-senha__botao">-</button>
-                        <p class="parametro-senha__texto">12</p>
-                        <button class="parametro-senha__botao">+</button>
-                    </div>
-                </div>
-                <div class="parametro-senha">
-                    <h4 class="parametro-senha__titulo">Características da senha</h4>
-                    <div class="parametro-senha-checkbox">
-                        <input name="maiusculo" type="checkbox" class="checkbox" checked>
-                        <label for="maiusculo">Letras maiúsculas</label>
-                    </div>
-                    <div class="parametro-senha-checkbox">
-                        <input name="minusculo" type="checkbox" class="checkbox">
-                        <label for="minusculo">Letras minúsculas</label>
-                    </div>
-                    <div class="parametro-senha-checkbox">
-                        <input name="numero" type="checkbox" class="checkbox">
-                        <label for="numero">Números</label>
-                    </div>
-                    <div class="parametro-senha-checkbox">
-                        <input name="simbolo" type="checkbox" class="checkbox">
-                        <label for="simbolo">Símbolos</label>
-                    </div>
-                </div>
-                <div class="parametro-senha">
-                    <h4 class="parametro-senha__titulo">Força da senha</h4>
-                    <div class="barra"></div>
-                    <div class="forca fraca"></div>
-                    <div class="parametro-senha-textos">
-                        <p>Fraca</p>
-                        <p>Média</p>
-                        <p>Forte</p>
-                    </div>
-                    <p class="entropia"></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script src="main.js"></script>
-</body>
+  <header>
+    <h1>Sustentabilidade no Campo</h1>
+    <p>Preservando hoje para colher amanhã</p>
+  </header>
 
+  <main>
+    <section class="intro">
+      <h2>O que é Sustentabilidade no Campo?</h2>
+      <p>
+        Sustentabilidade no campo é a prática de técnicas agrícolas que respeitam o meio ambiente,
+        conservam os recursos naturais e promovem o bem-estar das comunidades rurais.
+      </p>
+    </section>
+
+    <section class="benefits">
+      <h2>Benefícios da Sustentabilidade Rural</h2>
+      <ul>
+        <li>Preservação do solo e da água</li>
+        <li>Redução de agrotóxicos e uso de energia limpa</li>
+        <li>Qualidade de vida para as futuras gerações</li>
+        <li>Valorização da agricultura familiar</li>
+      </ul>
+    </section>
+
+    <section class="actions">
+      <h2>Ações Sustentáveis no Campo</h2>
+      <p>Exemplos de boas práticas:</p>
+      <ol>
+        <li>Rotação de culturas</li>
+        <li>Compostagem e adubação orgânica</li>
+        <li>Captação da água da chuva</li>
+        <li>Uso de energia solar</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Projeto Agrinho – Maria Rita</p>
+  </footer>
+</body>
 </html>
