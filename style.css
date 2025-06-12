@@ -4,75 +4,106 @@
   padding: 0;
 }
 
-body {
+html, body {
+  height: 100%;
   font-family: Arial, sans-serif;
-  background-color: #f0fff0; /* Verde bem claro */
-  color: #4e342e; /* Marrom escuro para o texto */
-  padding: 20px;
+  background-color: #f0fff0;
+  color: #4e342e;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  background-color: #1b5e20; /* Verde escuro */
+  background-color: #1b5e20;
   color: white;
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 0 0 20px 20px;
+}
+
+header h1 {
+  font-size: 3rem;
 }
 
 nav {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 nav button {
-  background-color: #a5d6a7; /* Verde claro */
+  background-color: #a5d6a7;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px;
   margin: 5px;
+  font-size: 1rem;
   font-weight: bold;
-  color: #4e342e; /* Marrom */
+  color: #4e342e;
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
 }
 
 nav button:hover {
-  background-color: #81c784; /* Verde um pouco mais escuro */
+  background-color: #81c784;
   transform: scale(1.05);
 }
 
 main {
-  margin-top: 30px;
+  flex: 1;
+  padding: 40px;
 }
 
 .content-section {
   display: none;
-  padding: 20px;
-  background-color: #e8f5e9; /* Verde muito claro */
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 40px;
+  background-color: #e8f5e9;
+  border-radius: 20px;
+  margin: 0 auto 30px;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-h2 {
-  color: #2e7d32; /* Verde escuro nos títulos */
+.content-section img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2e7d32;
+}
+
+.content-section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #6d4c41;
+  color: white;
 }
 
 .question-block {
   margin-top: 25px;
-  margin-bottom: 25px;
 }
 
 .question-block p {
+  font-size: 1.1rem;
   margin-bottom: 10px;
   font-weight: bold;
-  color: #3e2723; /* Marrom mais forte para perguntas */
 }
 
 .question-block button {
   display: block;
   margin: 5px 0;
-  padding: 8px 15px;
-  background-color: #d7ccc8; /* Marrom claro */
+  padding: 10px 20px;
+  background-color: #d7ccc8;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -82,14 +113,22 @@ h2 {
 }
 
 .question-block button:hover {
-  background-color: #bcaaa4; /* Marrom médio ao passar o mouse */
+  background-color: #bcaaa4;
 }
 
-footer {
-  text-align: center;
-  padding: 15px;
-  background-color: #6d4c41; /* Marrom escuro */
-  border-radius: 10px;
-  margin-top: 40px;
+.explore-button {
+  margin-top: 30px;
+  background-color: #4caf50;
   color: white;
+  font-size: 1.2rem;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.explore-button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
 }
