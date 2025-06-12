@@ -9,42 +9,43 @@
 <body>
   <header>
     <h1>Sustentabilidade no Campo</h1>
-    <p>Preservando hoje para colher amanhã</p>
+    <nav>
+      <button onclick="showSection('agricultura')">Agricultura</button>
+      <button onclick="showSection('meioAmbiente')">Meio Ambiente</button>
+      <button onclick="showSection('tecnologia')">Tecnologia</button>
+    </nav>
   </header>
 
   <main>
-    <section class="intro">
-      <h2>O que é Sustentabilidade no Campo?</h2>
+    <section id="agricultura" class="content-section">
+      <h2>Agricultura Sustentável</h2>
       <p>
-        Sustentabilidade no campo é a prática de técnicas agrícolas que respeitam o meio ambiente,
-        conservam os recursos naturais e promovem o bem-estar das comunidades rurais.
+        A agricultura sustentável utiliza técnicas que mantêm a produtividade sem esgotar os recursos naturais.
+        Isso inclui rotação de culturas, adubação orgânica, e manejo consciente do solo e da água.
       </p>
     </section>
 
-    <section class="benefits">
-      <h2>Benefícios da Sustentabilidade Rural</h2>
-      <ul>
-        <li>Preservação do solo e da água</li>
-        <li>Redução de agrotóxicos e uso de energia limpa</li>
-        <li>Qualidade de vida para as futuras gerações</li>
-        <li>Valorização da agricultura familiar</li>
-      </ul>
+    <section id="meioAmbiente" class="content-section">
+      <h2>Proteção do Meio Ambiente</h2>
+      <p>
+        A sustentabilidade no campo depende da preservação da natureza. Ações como reflorestamento, preservação de nascentes
+        e redução de queimadas são essenciais para manter o equilíbrio ecológico.
+      </p>
     </section>
 
-    <section class="actions">
-      <h2>Ações Sustentáveis no Campo</h2>
-      <p>Exemplos de boas práticas:</p>
-      <ol>
-        <li>Rotação de culturas</li>
-        <li>Compostagem e adubação orgânica</li>
-        <li>Captação da água da chuva</li>
-        <li>Uso de energia solar</li>
-      </ol>
+    <section id="tecnologia" class="content-section">
+      <h2>Tecnologia no Campo</h2>
+      <p>
+        A tecnologia pode ser aliada da sustentabilidade. Sistemas de irrigação inteligentes, painéis solares
+        e drones ajudam a produzir mais com menos impacto ambiental.
+      </p>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Projeto Agrinho – Maria Rita</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
