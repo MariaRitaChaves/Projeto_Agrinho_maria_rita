@@ -1,15 +1,28 @@
 function showSection(id) {
-  const sections = document.querySelectorAll('.content-section');
-  sections.forEach(section => {
+  document.querySelectorAll('.content-section').forEach(section => {
     section.style.display = 'none';
   });
-
-  const activeSection = document.getElementById(id);
-  if (activeSection) {
-    activeSection.style.display = 'block';
+  const section = document.getElementById(id);
+  if (section) {
+    section.style.display = 'block';
   }
 }
 
-// Mostrar a primeira seção por padrão
-window.onload = () => showSection('agricultura');// Aqui você pode adicionar interações futuras, por exemplo, efeitos dinâmicos
-console.log('Sustentabilidade no Campo - site interativo.');
+// Mostra a página inicial ao carregar
+window.onload = () => showSection('home');
+
+function checkAnswer(button, isCorrect) {
+  const buttons = button.parentElement.querySelectorAll('button');
+  buttons.forEach(btn => {
+    btn.disabled = true;
+    btn.style.opacity = 0.7;
+  });
+
+  if (isCorrect) {
+    button.style.backgroundColor = '#4caf50'; // verde
+    alert("Resposta correta! 🌱");
+  } else {
+    button.style.backgroundColor = '#e57373'; // vermelho
+    alert("Ops! Essa não é a resposta certa.");
+  }
+}
